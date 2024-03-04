@@ -1,0 +1,72 @@
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: #111111;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    font-size: 15px;    
+}
+
+header img{
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    margin-left: 30px;
+    text-decoration: nome;
+    transition: text-decoration 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.imagemFundo{
+    background-image: url('/img/valorant-305kescxw5dpup7y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+.imagemFundo h1{
+    margin-top: 0;
+    padding-top: 200px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+
