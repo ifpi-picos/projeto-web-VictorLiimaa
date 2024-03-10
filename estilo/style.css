@@ -255,14 +255,13 @@ footer p{
     justify-content: center;
     align-items: center;
     text-shadow: 1px 1px 2px #000000;
-    
-    
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center; 
     margin-bottom: 90px;
+    flex-wrap: wrap;
 }
 
 .video-fundo {
@@ -284,6 +283,7 @@ footer p{
     margin-right: 10px;
     margin-top: 44px;
     box-shadow: #111111 0px 0px 10px;
+    text-align: justify;
 }
 
 .imgfundo{
@@ -293,7 +293,7 @@ footer p{
     background-attachment: fixed; 
     background-position: center; 
     height: 100vh; 
-    width: 100%; 
+    width: 100%;
     display: flex; 
     flex-wrap: wrap;  
     gap: 20px;
@@ -337,7 +337,7 @@ footer p{
 
 .weapon-name {
     font-family: 'Anta', sans-serif;
-    font-size: 20px; /* Adjusted by media queries */
+    font-size: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
@@ -353,7 +353,7 @@ footer p{
     text-align: center;
     padding: 10px;
     transform: translateY(100%);
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
 }
 
 .card:hover .description {
@@ -364,32 +364,40 @@ footer p{
     transform: scale(1.1);
 }
 
+
 /* Media Queries */
-@media (max-width: 1200px) {
-    .armas {
-        font-size: 40px;
-    }
-
-    .card {
-        width: 300px;
-        height: 180px;
-        margin: 20px;
-    }
-
-    .weapon-name {
-        font-size: 18px;
+@media (max-width: 1024px) {
+    .video-fundo, .conteudo {
+        width: 90%;
+        margin: 10px auto; 
     }
 }
 
 @media (max-width: 768px) {
-    .armas {
-        font-size: 30px;
+    .container {
+        flex-direction: column;
+    }
+
+    .imgFundo {
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .video-fundo, .conteudo {
+        width: 95%;
+        margin-top: 20px;
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .armasNome, .nomeArmas, .sobreArmas p {
+        font-size: 24px;
     }
 
     .card {
-        width: 250px;
-        height: 150px;
-        margin: 15px;
+        width: 100%;
+        margin: 10px auto;
     }
 
     .weapon-name {
@@ -397,20 +405,5 @@ footer p{
     }
 }
 
-@media (max-width: 480px) {
-    .armas {
-        font-size: 20px;
-    }
-
-    .card {
-        width: 200px;
-        height: 120px;
-        margin: 10px;
-    }
-
-    .weapon-name {
-        font-size: 14px;
-    }
-}
 
 
