@@ -1,2 +1,2 @@
 Link do site 
-https://informacoesvalorant.netlify.app
+https://infovalorant.netlify.app/
